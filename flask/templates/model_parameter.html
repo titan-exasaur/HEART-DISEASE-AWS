@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Heart Disease</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div style="background-color:rgba(0, 0, 0, 0.7);">
+        <div class="side_bar">
+            <div class="profile">
+                <div class="logo">Heart Disease</div>
+            </div>
+
+            <ul>
+                <li><a href="home"><i class="fas fa-qrcode"></i>Home</a></li>
+                <li><a href="eda"><i class="fas fa-question-circle"></i>EDA</a></li>
+                <li><a href="detector"><i class="fas fa-heart"></i>Detector</a></li>
+                <li><a class="active" href="model_parameter"><i class="fas fa-address-book"></i>Model Parameters</a>
+                </li>
+                <li><a href="/"><i class="bx bx-log-out"></i>log out</a></li>
+
+            </ul>
+            <!-- <div class="media_icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div> -->
+
+        </div>
+        <section style="background-color:rgba(0, 0, 0, 0.1); height: auto;">
+            <div style="padding: 10px;">
+                <div class="header_text"
+                    style="text-align:center;text-transform:uppercase;letter-spacing:3px;">
+                    Model Parameters
+                </div>
+                <h3>1 &nbsp; LOGISTIC REGRESSION</h3>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="{{url_for('static',filename='model_parameter/1_logistic_regression_confusion_matrix.png')}}" alt="" height="500" width="650">
+                    <p>fig. logistic regression confusion matrix</p>
+                </div>
+
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="{{url_for('static',filename='model_parameter/1_logistic_regression_model_parameters.png')}}" alt="" height="500" width="650">
+                    <p>fig. logistic regression model parameters </p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <h3>2 &nbsp; RANDOM FOREST</h3>
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="{{url_for('static',filename='model_parameter/2_random_forest_confusion_matrix.png')}}" alt="" height="500" width="650">
+                    <p>fig. random forest confusion matrix </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="{{url_for('static',filename='model_parameter/2_random_forest_model_parameters.png')}}" alt="" height="500" width="650">
+                    <p>fig. random forest model parameters </p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <h3>3 &nbsp; DECISION TREE</h3>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="{{url_for('static',filename='model_parameter/3_decision_tree_confusion_matrix.png')}}" alt="" height="500" width="650">
+                    <p>fig. decision tree confusion matrix </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="{{url_for('static',filename='model_parameter/3_decision_tree_model_parameters.png')}}" alt="" height="500" width="650">
+                    <p>fig. decision tree model parameters </p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <h3>4 &nbsp; STACKED MODEL</h3>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="{{url_for('static',filename='model_parameter/4_stacked_model_confusion_matrix.png')}}" alt="" height="500" width="650">
+                    <p>fig. 4 stacked model confusion matrix </p>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <img src="{{url_for('static',filename='model_parameter/4_stacked_model_model_parameters.png')}}" alt="" height="500" width="650">
+                    <p>fig. stacked model model parameters</p>
+                </div><br><hr><br>
+
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>

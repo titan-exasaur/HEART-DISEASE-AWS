@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background: #e3e3e3;
+  background: url(human__heart.jpg) no-repeat;
+  background-position:0px;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+.side_bar{
+  position: fixed;
+  top: 0;
+  width: 290px;
+  height: 100vh;
+  background:transparent;
+  padding: 12px;
+  border-right: 2px solid #10dfcd; ;
+  /* box-shadow: -3px -3px 7px #ffffff,
+             3px 3px 5px #ceced1,
+             inset -3px -3px 7px #ffffff,
+             inset 3px 3px 5px #ceced1; */
+}
+.logo{
+  font-size: 27px;
+  font-weight: 600;
+  color: #f0f3fc;
+  text-align:center;
+  padding-top:10px;
+}
+.side_bar ul{
+  margin-top: 35px;
+  list-style: none;
+}
+.side_bar ul li{
+  background-color: transparent;
+  margin-top: 60px;
+}
+.side_bar ul a{
+  color: #f3f3f7;
+  text-decoration: none;
+  display: block;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  padding : 10px 25px;
+  border-radius: 6px;
+  /* box-shadow: -3px -3px 7px #ffffff,
+             3px 3px 5px #ceced1; */
+  position: relative;
+  transition: all 0.2s ease;
+}
+.side_bar ul i{
+  margin-right: 10px;
+}
+
+.side_bar ul a:hover:before,
+.media_icons a:hover:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
+.side_bar ul a:hover:before{
+  border-radius: 6px;
+}
+.media_icons a:hover:before{
+  border-radius: 50%;
+}
+.side_bar ul a:hover{
+  color: #3498db;
+  letter-spacing: 1px;
+}
+
+.media_icons a:nth-child(1){
+  color: #4267b2;
+}
+.media_icons a:nth-child(2){
+  color: #1da1f2;
+}
+.media_icons a:nth-child(3){
+  color: #e1306c;
+}
+.media_icons a:nth-child(4){
+  color: #ff0000;
+}
+
+.bars{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+section{
+    color: white;
+    height: 100vh;
+    margin-left: 290px;
+    color:rgb(233, 231, 231);
+    padding-left: 30px;
+}
+.header_text{
+    padding: 10px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight:900;
+    letter-spacing: 1px;
+    color:#10dfcd;
+}
+.active{
+    border: 1px solid rgb(39, 83, 22);
+    background-color: #778181;
+}
+.profile img{
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 0 auto;
+}
